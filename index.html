@@ -4,31 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assinar documento online</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="herader">
-                <ul class="nav">
-                    <li class="nav_item"><a href="">1</a></li>
-                    <li class="nav_item"><a href="">2</a></li>
-                    <li class="nav_item"><a href="">3</a></li>
-                    <li class="nav_item"><a href="">4</a></li>
-                </ul>
-            </div>
-        </nav>
-         <div class="login_senha">
-            <h3>Email</h3>
-            <h3>Senha</h3>
-            <input type="">
-           <input type="text">
-           <button class="myButton">Entrar</button>
-         </div>
-        <div class="container">
+    <head>
+        
 
-        </div>
-    </header>
+        <nav id="nav-1">
+            <a class="link-1" href="#">Home</a>
+            <a class="link-1" href="#">Valores</a>
+            <a class="link-1" href="#">Ajuda?</a>
+            <a class="link-1" href="#">Legislação</a>
+          </nav>
+        <!-- ENVIAR EMAIL-->
+        <form class="contact_form" action= "https://formsubmit.co/g.vale.programmer@gmail.com" method="POST">
+
+            <div class="contact-form">
+                <div class="formulario">
+                    <label for="name" class="colocar_nombre">Nome</label>
+                        <input type="text" name="name" id="nombre" required="obligatorio" placeholder="Nome completo do cliente.">
+                    <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" required="obligatorio" placeholder="Exemplo: clientefiel@exemplo.com">
+                    <label for="telefone" class="colocar_telefono">Telefone</label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Exemplo: (41)98765-4321">
+                    <label for="asunto" class="colocar_asunto">Mensagem</label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Digite sua mensagem aqui.">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#/obrigado.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Escrevar aqui" required></textarea>
+
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </div>
+       </form>
+       <!--ENVIAR EMAIL-->
+
+            <div class="contact_form">
+
+                <div class="formulario">			
+                    <h1>Formulário de contato</h1>
+                        <h3>Preencha com os dados do seu cliente.</h3>
+                            <form action="submeter-formulario.php" method="post">
+                                        <p>
+                                            <label for="nombre" class="colocar_nombre">Nome
+                                                <span class="obrigatorio">*</span>
+                                            </label>
+                                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nome completo do cliente.">
+                                        </p>
+                                    
+                                        <p>
+                                            <label for="email" class="colocar_email">Email
+                                                <span class="obligatorio">*</span>
+                                            </label>
+                                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Email do cliente">
+                                        </p>
+                                
+                                        <p>
+                                            <label for="telefone" class="colocar_telefono">Telefone
+                                            </label>
+                                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                        </p>		
+                                    
+                                        <p>
+                                            <label for="website" class="colocar_website">CPF
+                                            </label>
+                                                <input type="url" name="introducir_website" id="website" placeholder="CPF do cliente">
+                                        </p>		
+                                    
+                                        <p>
+                                            <label for="asunto" class="colocar_asunto">Mensagem
+                                                <span class="obligatorio">*</span>
+                                            </label>
+                                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                                        </p>		
+                                    
+                                        <p>
+                                            <label for="mensaje" class="colocar_mensaje">Contrato 
+                                                <span class="obligatorio">*</span>
+                                            </label>                     
+                                                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deixe aqui seu arquivo PDF"></textarea> 
+                                           </p>	  								
+                                    
+                                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+        
+                                        <p class="aviso">
+                                            <span class="obligatorio"> * </span>Todos os campos são obrigatorios.
+                                        </p>					
+                                
+                            </form>
+                </div>	
+            </div>
+    </head>
+    
 </body>
 </html>
