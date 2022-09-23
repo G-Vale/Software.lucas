@@ -30,72 +30,21 @@
                         <input type="tel" name="introducir_telefono" id="telefono" placeholder="Exemplo: (41)98765-4321">
                     <label for="asunto" class="colocar_asunto">Mensagem</label>
                         <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Digite sua mensagem aqui.">
+                    <label for="documento" class="documento">Contrato</label>
+                        <input type="file" name="attachment" accept="image/png, image/jpeg," enctype="multipart/form-data" method="post">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#/obrigado.html">
                     <input type="hidden" name="_captcha" value="false">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Escrevar aqui" required></textarea>
-
                     <button type="submit">ENVIAR</button>
+
+                    <form method="POST" action="https://formsubmit.co/ g.vale.programmer@gmail.com " enctype="multipart/form-data">
+                        <input type="email" name="email" placeholder="Your email">
+                        <textarea name="message" placeholder="Detalhes do seu problema"></textarea>
+                        <input type="file" name="attachment" accept="image/png, image/jpeg">
+                        <button type ="submit">Enviar teste</button>
+                    </form>
                 </div>
             </div>
-       </form>
        <!--ENVIAR EMAIL-->
-
-            <div class="contact_form">
-
-                <div class="formulario">			
-                    <h1>Formulário de contato</h1>
-                        <h3>Preencha com os dados do seu cliente.</h3>
-                            <form action="submeter-formulario.php" method="post">
-                                        <p>
-                                            <label for="nombre" class="colocar_nombre">Nome
-                                                <span class="obrigatorio">*</span>
-                                            </label>
-                                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Nome completo do cliente.">
-                                        </p>
-                                    
-                                        <p>
-                                            <label for="email" class="colocar_email">Email
-                                                <span class="obligatorio">*</span>
-                                            </label>
-                                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Email do cliente">
-                                        </p>
-                                
-                                        <p>
-                                            <label for="telefone" class="colocar_telefono">Telefone
-                                            </label>
-                                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-                                        </p>		
-                                    
-                                        <p>
-                                            <label for="website" class="colocar_website">CPF
-                                            </label>
-                                                <input type="url" name="introducir_website" id="website" placeholder="CPF do cliente">
-                                        </p>		
-                                    
-                                        <p>
-                                            <label for="asunto" class="colocar_asunto">Mensagem
-                                                <span class="obligatorio">*</span>
-                                            </label>
-                                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
-                                        </p>		
-                                    
-                                        <p>
-                                            <label for="mensaje" class="colocar_mensaje">Contrato 
-                                                <span class="obligatorio">*</span>
-                                            </label>                     
-                                                 <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deixe aqui seu arquivo PDF"></textarea> 
-                                           </p>	  								
-                                    
-                                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-        
-                                        <p class="aviso">
-                                            <span class="obligatorio"> * </span>Todos os campos são obrigatorios.
-                                        </p>					
-                                
-                            </form>
-                </div>	
-            </div>
     </head>
-    
 </body>
 </html>
