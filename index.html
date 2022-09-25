@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assinar documento online</title>
+    <title>Assinar Documento online</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,5 +46,33 @@
             </div>
        <!--ENVIAR EMAIL-->
     </head>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    
+    <script defer src="./init-firebase.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+        
+        // https://firebase.google.com/docs/web/setup#available-librariesn
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyDXi0ZADuZgxWvc83-iPqeXjOaBpvWb6u0",
+          authDomain: "assinar-contrato-online.firebaseapp.com",
+          projectId: "assinar-contrato-online",
+          storageBucket: "assinar-contrato-online.appspot.com",
+          messagingSenderId: "804509255597",
+          appId: "1:804509255597:web:715f28ab5ca90869010324",
+          measurementId: "G-NMX88QF5WT"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 </html>
